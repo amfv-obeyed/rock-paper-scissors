@@ -1,6 +1,17 @@
 function getComputerChoice() {
-    return Math.floor(Math.random() * 3)
+    let compAnswer = Math.floor(Math.random() * 3)
+    if (compAnswer == 0) {
+        return "rock"
+    } if (compAnswer == 1) {
+        return "paper"
+    } if (compAnswer == 2) {
+        return "scissors"
+    }
 }
 
-let answer = getComputerChoice()
-console.log(answer)
+console.log(getComputerChoice())
+
+
+
+
+
