@@ -8,8 +8,17 @@ function getComputerChoice() {
         return "scissors"
     }
 }
-
 console.log(getComputerChoice())
+
+function getHumanChoice() {
+    let humanAnswer = prompt("Rock, Paper or Scissors?")
+    return humanAnswer
+}
+console.log(getHumanChoice())
+
+let computerScore = 0
+let humanScore = 0
+
 
 
 
