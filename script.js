@@ -17,38 +17,39 @@ function getHumanChoice() {
 
 let computerScore = 0
 let humanScore = 0
+// console.log(computerScore + ' - computer score')
+// console.log(humanScore + ' - human score')
 
 function playRound(humanChoice, computerChoice) {
      if (humanChoice.toLowerCase() == computerChoice) {
         console.log('Tie!')
-     } else if (computerChoice = 'rock') {
-        if (humanChoice.toLowerCase() = 'scissors') {
-            console.log('you lose! rock beats scissors!')
-        } else if (humanChoice.toLowerCase = 'paper') {
-            console.log('you win! paper beats rock!')
+     } else if (computerChoice == 'rock') {
+        if (humanChoice.toLowerCase() == 'scissors') {
+            console.log('you lose! rock beats scissors!');
+        } else if (humanChoice.toLowerCase() == 'paper') {
+            console.log('you win! paper beats rock!');
         } else {
-            console.log('invalid choice')
+            console.log('invalid choice');
         } 
-    }
-        else if (computerChoice = 'paper') {
-            if (humanChoice = 'rock') {
-                console.log('you lose! paper beats rock!')
-            } else if (humanChoice = 'scissors') {
-                console.log('you win! scissors beats paper!')
+    } 
+    else if (computerChoice = 'paper') {
+            if (humanChoice.toLowerCase() == 'rock') {
+                console.log('you lose! paper beats rock!');
+            } else if (humanChoice.toLowerCase() == 'scissors') {
+                console.log('you win! scissors beats paper!');
             } else {
-                console.log('invalid choice')
+                console.log('invalid choice');
             }
-        }
-        else if (computerChoice = 'scissors') {
-            if (humanChoice = 'rock') {
-                console.log('you win! rock beats scissors!')
-            } else if (humanChoice = 'paper') {
-                console.log('you lose! scissors beats paper!')
+        } 
+        else if (computerChoice == 'scissors') {
+            if (humanChoice.toLowerCase() == 'rock') {
+                console.log('you win! rock beats scissors!');
+            } else if (humanChoice.toLowerCase() == 'paper') {
+                console.log('you lose! scissors beats paper!');
             } else {
-                console.log('invalid choice')
+                console.log('invalid choice');
             }
-        }
-     
+        }    
 }
 
 const humanSelection = getHumanChoice();
