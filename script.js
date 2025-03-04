@@ -26,25 +26,25 @@ function playRound(humanChoice, computerChoice) {
      } else if (computerChoice == 'rock') {
         if (humanChoice == 'paper') {
             console.log('you win! paper beats rock');
-            ++humanScore
+            humanScore++
             return 'win'
         } else if (humanChoice == 'scissors') {
             console.log('you lose! rock beats scissors!');
-            ++computerScore
+            computerScore++
             return 'loss'
         } else {
             console.log('invalid choice');
             return 'invalid'
         } 
     } 
-    else if (computerChoice = 'paper') {
+    else if (computerChoice == 'paper') {
             if (humanChoice == 'rock') {
                 console.log('you lose! paper beats rock!');
-                ++computerScore
+                computerScore++
                 return 'loss'
             } else if (humanChoice == 'scissors') {
                 console.log('you win! scissors beats paper!');
-                ++humanScore
+                humanScore++
                 return 'win'
             } else {
                 console.log('invalid choice');
@@ -54,11 +54,11 @@ function playRound(humanChoice, computerChoice) {
         else if (computerChoice == 'scissors') {
             if (humanChoice == 'rock') {
                 console.log('you win! rock beats scissors!');
-                ++humanScore
+                humanScore++
                 return 'win'
             } else if (humanChoice == 'paper') {
                 console.log('you lose! scissors beats paper!');
-                ++computerScore
+                computerScore++
                 return 'loss'
             } else {
                 console.log('invalid choice');
@@ -80,9 +80,9 @@ function playGame() {
         console.log('Computer Score', computerScore)
 } 
 if (humanScore > computerScore) {
-    console.log('you win!')
+    console.log('game end! you win!')
 } else if (computerScore > humanScore) {
-    console.log('you lose! try again!')
+    console.log('game end! you lose! try again!')
 } else {
     console.log('tie!')
 }
