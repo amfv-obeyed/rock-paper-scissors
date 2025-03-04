@@ -21,30 +21,31 @@ let humanScore = 0
 // console.log(humanScore + ' - human score')
 
 function playRound(humanChoice, computerChoice) {
-     if (humanChoice.toLowerCase() == computerChoice) {
+    humanChoice == humanChoice.toLowerCase()
+     if (humanChoice == computerChoice) {
         console.log('Tie!')
      } else if (computerChoice == 'rock') {
-        if (humanChoice.toLowerCase() == 'scissors') {
+        if (humanChoice == 'scissors') {
             console.log('you lose! rock beats scissors!');
-        } else if (humanChoice.toLowerCase() == 'paper') {
+        } else if (humanChoice == 'paper') {
             console.log('you win! paper beats rock!');
         } else {
             console.log('invalid choice');
         } 
     } 
     else if (computerChoice = 'paper') {
-            if (humanChoice.toLowerCase() == 'rock') {
+            if (humanChoice == 'rock') {
                 console.log('you lose! paper beats rock!');
-            } else if (humanChoice.toLowerCase() == 'scissors') {
+            } else if (humanChoice == 'scissors') {
                 console.log('you win! scissors beats paper!');
             } else {
                 console.log('invalid choice');
             }
         } 
         else if (computerChoice == 'scissors') {
-            if (humanChoice.toLowerCase() == 'rock') {
+            if (humanChoice == 'rock') {
                 console.log('you win! rock beats scissors!');
-            } else if (humanChoice.toLowerCase() == 'paper') {
+            } else if (humanChoice == 'paper') {
                 console.log('you lose! scissors beats paper!');
             } else {
                 console.log('invalid choice');
