@@ -1,3 +1,4 @@
+
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3)
     if (computerChoice == 0) {
@@ -13,12 +14,6 @@ function getHumanChoice() {
     let humanChoice = prompt("Rock, Paper or Scissors?")
     return humanChoice
 }
-
-
-let computerScore = 0
-let humanScore = 0
-// console.log(computerScore + ' - computer score')
-// console.log(humanScore + ' - human score')
 
 function playRound(humanChoice, computerChoice) {
     humanChoice == humanChoice.toLowerCase()
@@ -53,9 +48,13 @@ function playRound(humanChoice, computerChoice) {
         }    
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-console.log(humanSelection)
-console.log(computerSelection)
-
-playRound(humanSelection, computerSelection);
+function playGame() {
+    const humanSelection = getHumanChoice()
+    const computerSelection = getComputerChoice()
+    for (let i = 0; i < 5; i++) {
+        playRound(humanSelection, computerSelection)
+        console.log()
+        console.log()
+        console.log()
+}
+playGame()
